@@ -7,6 +7,13 @@
     font-family: poppins-bold;
     src: url(fonts/Poppins-SemiBold.ttf);
 }
+@font-face {
+    font-family: reg;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+.reg {
+    font-family: reg;
+}
 .poppins-bold{
     font-family: poppins-bold;
 }
@@ -14,7 +21,12 @@
     font-family: bold;
 }
 .first-half {
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #DDDDDD;
+}
+html, body {
+    margin: 0 auto;
 }
 .page-name {
     margin-top: 48px;
@@ -27,5 +39,65 @@
     font-size: 13px;
     margin-top: -46px;
     padding-left: 2px;
-    color: #DDDDDD;
+    color: #B3B3B3;
+}
+.for-zero {
+   margin-left: 1600px;
+   margin-top: -285px; 
+}
+.for-01{
+    font-size:158.3px ;
+}
+.about-me {
+    font-size: 43.17px;
+    color:#373737 ;
+    margin-top: -310px;
+}
+.name {
+    width: 582px;
+    margin-top: 284px;
+    margin-left: 1030px;
+   
+}
+.name-1{
+    font-size: 50px ;
+
+}
+.name-2 {
+    font-size: 71px;
+    margin-top: -60px;
+    margin-left: -20px;
+}
+.web-span {
+    font-size:23.29;
+     margin-top:-60px;
+}
+a {
+    text-decoration: none;
+}
+.name img {
+    width: 25px;
+    padding-left: 10px;
+}
+.name img:hover{
+    width: 40px;
+    filter: drop-shadow( 0 8px 8px  lightblue);
+}
+.clients {
+    margin-top: 181px;
+    margin-left: 1462px;
+    padding-bottom: 47px;
+}
+.for-clients {
+    font-size: 34px;
+}
+.for-clients span{
+    color: #E93656;
+}
+.red-line {
+    width: 390px;
+    margin-top: -20px;
+    height: 6px;
+    background-color: #E93656;
+    margin-left: -2px;
 }
