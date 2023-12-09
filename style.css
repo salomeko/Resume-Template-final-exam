@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: bold;
+    src: url(fonts/IBMPlexSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+.poppins-bold{
+    font-family: poppins-bold;
+}
+.bold{
+    font-family: bold;
+}
+.first-half {
+    width: 100%;
+}
+.page-name {
+    margin-top: 48px;
+    margin-left: 52px;
+}
+.roca{
+    font-size: 40px;  
+}
+.template {
+    font-size: 13px;
+    margin-top: -46px;
+    padding-left: 2px;
+    color: #DDDDDD;
+}
