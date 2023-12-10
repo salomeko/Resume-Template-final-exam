@@ -21,15 +21,13 @@
     font-family: bold;
 }
 .first-half {
-    padding: 0;
-    margin: 0;
     background-color: #DDDDDD;
 }
 html, body {
     margin: 0 auto;
 }
 .page-name {
-    margin-top: 48px;
+    display: inline-block;
     margin-left: 52px;
 }
 .roca{
@@ -42,8 +40,9 @@ html, body {
     color: #B3B3B3;
 }
 .for-zero {
+    display: inline-block;
    margin-left: 1600px;
-   margin-top: -285px; 
+   margin-top: -285px;
 }
 .for-01{
     font-size:158.3px ;
@@ -51,12 +50,13 @@ html, body {
 .about-me {
     font-size: 43.17px;
     color:#373737 ;
-    margin-top: -310px;
+    position: absolute;
+    top: 40px;
 }
 .name {
-    width: 582px;
-    margin-top: 284px;
-    margin-left: 1030px;
+    width: 850px;
+    margin-top: 138px;
+    margin-left: 950px;
    
 }
 .name-1{
@@ -80,8 +80,9 @@ a {
     padding-left: 10px;
 }
 .name img:hover{
-    width: 40px;
+    width: 35px;
     filter: drop-shadow( 0 8px 8px  lightblue);
+    transition-duration: 0.5s;
 }
 .clients {
     margin-top: 181px;
@@ -100,4 +101,111 @@ a {
     height: 6px;
     background-color: #E93656;
     margin-left: -2px;
+    border: none;
 }
+.about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 155px;
+    margin-top: 218px;
+    text-align: justify;
+}
+.for-name {
+    font-size: 40px;
+}
+.yellow-text {
+    font-size: 14px;
+    color: #DAAE19;
+}
+.all-about-me {
+    font-size: 15px;
+    color: #555555;
+    width: 400px;
+}
+.me img{
+    grid-template-columns: auto;
+    width: 430px;
+    height: 603px;
+    margin-right: 55px;
+}
+.hire {
+    width: 152px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: 60px;
+    color: white;
+    font-size: 15px;
+    background-color: #E93656;
+    border: #E93656;
+}
+.what-i-can-do {
+    margin-top: 59px;
+}
+.what-i-can-do img {
+    padding-top: 79px;
+    width: 30px;
+    padding-left: 20px;
+}
+.what-i-can-do img:hover {
+    margin: 1%;
+    padding: 1em;
+    background-color: #15263E ;
+}
+.what-i-can-do p{
+    font-size: 20px;
+}
+.what-i-can-do span {
+    color: #E93656;
+}
+.teamwork {
+    width: 300px;
+    height: 9px;
+    background-color: #F0F0F0;
+    border: none;
+    margin-left: -1px;
+    transition: width 2s;
+}
+.about:hover  .hr1{
+    background-color: #E93656;
+    width: 256px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+.about:hover  .hr2{
+    background-color: #E93656;
+    width: 195px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+.about:hover  .hr3{
+    background-color: #E93656;
+    width: 204px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+.about:hover  .hr4{
+    background-color: #E93656;
+    width: 120px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+}
+.contact {
+    margin-top: 100px;
+    background-color: #15263E;
+    height: 210px;
+}
+.phone {
+    width: 30px;
+    margin-top: 90px;
+    margin-left: 534px;
+   
+}
+
