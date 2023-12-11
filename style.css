@@ -198,14 +198,46 @@ a {
     transition-delay: 0.5s;
 }
 .contact {
-    margin-top: 100px;
+    margin-top: 60px;
     background-color: #15263E;
     height: 210px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
 }
 .phone {
     width: 30px;
-    margin-top: 90px;
-    margin-left: 534px;
-   
+    height: 30px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 290px;
+    border-radius: 50%;
+    border-style:  dashed;
+    color: white;
 }
-
+.for-nums {
+    margin-top: 60px;
+    color: white;
+    font-size: 25px;
+}
+.nums {
+    color:#DFDFDF ;
+    font-size: 14px;
+    margin-top: -15px;
+}
+.map-dot {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 50%;
+    background: #E93656 0% 0% no-repeat padding-box;
+}
+.mail {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border-style:  dashed;
+    color: white;
+}
