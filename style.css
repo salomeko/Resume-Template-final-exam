@@ -31,7 +31,7 @@ html, body {
     margin-left: 52px;
 }
 .roca{
-    font-size: 40px;  
+    font-size: 40px;
 }
 .template {
     font-size: 13px;
@@ -57,7 +57,7 @@ html, body {
     width: 850px;
     margin-top: 138px;
     margin-left: 950px;
-   
+
 }
 .name-1{
     font-size: 50px ;
@@ -149,7 +149,7 @@ a {
 .what-i-can-do img:hover {
     margin: 1%;
     padding: 1em;
-    background-color: #15263E ;
+    background-image: radial-gradient(circle, white, #15263E, #15263E);
 }
 .what-i-can-do p{
     font-size: 20px;
@@ -201,15 +201,17 @@ a {
     margin-top: 60px;
     background-color: #15263E;
     height: 210px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto ;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    /* grid-template-columns: auto auto auto auto auto auto ; */
 }
 .phone {
     width: 30px;
     height: 30px;
     padding: 30px;
     margin-top: 60px;
-    margin-left: 290px;
+    margin-left: 350px;
     border-radius: 50%;
     border-style:  dashed;
     color: white;
