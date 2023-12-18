@@ -11,6 +11,100 @@
     font-family: reg;
     src: url(fonts/Poppins-Regular.ttf);
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .carousel {
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reg {
     font-family: reg;
 }
@@ -29,7 +123,10 @@ html, body {
 }
 .page-name {
     display: inline-block;
-    margin-left: 52px;
+    position: absolute;
+    top: 48px;
+    left: 52px;
+    z-index: 1;
 }
 .roca{
     font-size: 40px;
@@ -53,16 +150,18 @@ html, body {
     color:#373737 ;
     position: absolute;
     top: 40px;
+    width: 250px;
 }
 .name {
+    position: absolute;
     width: 850px;
-    margin-top: 138px;
-    margin-left: 950px;
+    top: 338px;
+    left: 950px;
+    z-index: 1;
 
 }
 .name-1{
     font-size: 50px ;
-
 }
 .name-2 {
     font-size: 71px;
@@ -77,27 +176,38 @@ a {
     text-decoration: none;
 }
 .name img {
-    width: 25px;
+    width: 45px;
     padding-left: 10px;
 }
 .name img:hover{
-    width: 35px;
+    margin-top: -15px;
+    width: 55px;
     filter: drop-shadow( 0 8px 8px  lightblue);
     transition-duration: 0.5s;
 }
 .clients {
-    margin-top: 181px;
-    margin-left: 1462px;
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    top: 780px;
+    left: 1262px;
     padding-bottom: 47px;
 }
-.for-clients {
+/* * {
+    outline: 1px solid red;
+  } */
+.for-clients-100 {
+    width: 400px;
     font-size: 34px;
+    margin-left: 175px;
 }
-.for-clients span{
+.for-clients-100 span{
+    width: 50px;
     color: #E93656;
+    margin-left: -178px;
 }
 .red-line {
-    width: 390px;
+    width: 400px;
     margin-top: -20px;
     height: 6px;
     background-color: #E93656;
@@ -108,7 +218,7 @@ a {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-left: 155px;
-    margin-top: 218px;
+    margin-top: 118px;
     text-align: justify;
 }
 .for-name {
@@ -144,13 +254,15 @@ a {
 }
 .what-i-can-do img {
     padding-top: 79px;
-    width: 30px;
+    width: 50px;
     padding-left: 20px;
 }
 .what-i-can-do img:hover {
-    margin: 1%;
-    padding: 1em;
-    background-image: radial-gradient(circle, white, #15263E, #15263E);
+    margin-top: -9px;
+    width: 55px;
+    margin: 0.1%;
+    padding: 0.7em;
+    background-image: radial-gradient(circle, white, white, #15263E, #15263E);
 }
 .what-i-can-do p{
     font-size: 20px;
@@ -211,8 +323,8 @@ a {
     border-color: #E93656;
 }
 .phone {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     padding: 30px;
     margin-top: 60px;
     margin-left: 350px;
@@ -231,8 +343,8 @@ a {
     margin-top: -15px;
 }
 .map-dot {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     padding: 30px;
     margin-top: 60px;
     /* background: #E93656 0% 0% no-repeat padding-box; */
@@ -241,8 +353,8 @@ a {
     color: white;
 }
 .mail {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     padding: 30px;
     margin-top: 60px;
     border-radius: 50%;
@@ -255,7 +367,6 @@ a {
     grid-template-columns: repeat(4, 285px);
     gap: 10px;
     justify-content: center;
-
 }
 .for-clients div {
     background-color: #f0f0f0;
@@ -285,7 +396,7 @@ a {
 .for-clients div:hover{
     background-color: #15263E;
     color: #F0F0F0;
-    width: 300px;
+    width: 305px;
 }
 .clip {
     position: relative;
@@ -518,6 +629,12 @@ a {
     width: 110px;
     height: 110px;
     margin-top: 150px;
+    color: #15263E;
+}
+
+.blue-container:hover{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 150px;
 }
 .clients-divs{
     width: 230px;
@@ -543,26 +660,32 @@ footer {
 }
 .footer-p-1{
     position:absolute;
-    top: 7822px;
+    top: 7422px;
     font-size: 45px;
     left: 840px;
+    color: white;
 }
 .footerp-2{
     position: absolute;
-    top: 7908px;
+    top: 7520px;
     left: 750px;
     font-size: 17px;
+    color: #EEEEEE;
 }
 .input-container{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 8010px;
-    left: 710px;
+    top: 7610px;
+    left: 580px;
+}
+.input-container input{
+    width: 290px;
+    height: 50px;
 }
 .input-container textarea{
-    margin-top: 40px;
-    margin-left: -540px;
+    margin-top: 60px;
+    margin-left: -878px;
 }
 .footer-button{
     width: 187px;
@@ -572,7 +695,7 @@ footer {
     color: #E93656;
     font-size: 12px;
     position: absolute;
-    top: 8210px;
+    top: 7858px;
     left: 890px;
 }
 .footer-button:hover{
