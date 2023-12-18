@@ -398,30 +398,86 @@ a {
     color: #F0F0F0;
     width: 305px;
 }
-.clip {
+/* .clip {
     position: relative;
     width: 100%;
     height: 570px;
     margin-top: 160px;
+} */
+
+
+
+
+
+.clip-for-inner{
+    position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.for-main-div{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.buttons a {
+    font-size: 16px;
+  }
+  .buttons a:hover {
+    cursor:pointer; 
+    font-size: 16px;
+  }
+  .buttons{
+    position: absolute;
+    top: 3107px;
+    left: 1550px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .buttons img{
+    position: absolute;
+  width: 20px;
+  }
+  
+  .clip-img{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .clip-p{
+    position: absolute;
+    top: 3100px;
+    left: 400px;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  .clip-client{
+    position: absolute;
+    top: 3099px;
+    left: 1050px;
+    background: #7ACCC800 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    padding: 15px;
+  border: 2px dashed #FFFFFF;
+  }
+  .quote{
+    position: absolute;
+    top: 3099px;
+    left: 1271px;
+  }
+  .about-them{
+    position: absolute;
+    top: 3151px;
+    left: 1271px;
+    color: #E93656;
+    font-size: 13px;
+  }
+  .about-them-name{
+    position: absolute;
+    top: 3180px;
+    left: 1271px;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
 
 
 

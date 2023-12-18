@@ -171,20 +171,48 @@
         <p class="on-hover"> My team will provide you with clear, patient guidance and we are ready to answer any question, no matter how small.</p>
     </div>
    </section>
-<section>
-   <img class="clip" src="img/clip.jpg" alt="clip"> 
 
-
-
-
-
-
-
-
-
-
-
-</section>
+<div class="main_div">
+    <div class="buttons">
+        <a  onclick="divVisibility('Div1');"><img src="img/circle-left-regular.svg" alt=""></a> 
+        <a  onclick="divVisibility('Div2');"><img src="img/circle-left-regular.svg" alt=""></a> 
+        <a  onclick="divVisibility('Div3');"><img src="img/circle-left-regular.svg" alt=""></a> 
+        <a  onclick="divVisibility('Div4');"><img src="img/circle-left-regular.svg" alt=""></a>
+    </div>
+        <div id="Div1">
+          <img class="clip-img" src="img/clip (1).jpg" alt="">
+          <p class="clip-p">Working with salome has been a pleasure. <br> They have consistently delivered high-quality work, exceeding our expectations <br> with their attention to detail and creative problem-solving skills.</p>
+          <img class="clip-client" src="img/d3 (1).svg" alt="">
+          <img class="quote" src="img/quote.svg" alt="">
+          <p class="about-them">Graphic Designer</p>
+          <p class="about-them-name">Mary Jane</p>
+        </div>
+        <div id="Div2" style="display: none;">
+          <img class="clip-img" src="img/clip (1).jpg" alt="">
+          <p class="clip-p">I've had the pleasure of working with this web developer on several projects, <br> and I can confidently say that their work is top-notch. <br> They have a keen eye for detail and a deep understanding of programming languages, <br> which makes them a valuable asset to any team.</p>
+          <img class="clip-client" src="img/d4 (1).svg" alt="">
+          <img class="quote" src="img/quote.svg" alt="">
+          <p class="about-them">Web Developer</p>
+          <p class="about-them-name">Bill James</p>
+        </div>
+        <div id="Div3" style="display: none;">
+          <img class="clip-img" src="img/clip (1).jpg " alt="">
+          <p class="clip-p">I've had the pleasure of working with Salome on several projects, and I can  <br>confidently say that their work is of the highest quality. They have <br> a keen eye for detail and a deep understanding of full-stack development, <br> which is evident in the robust and scalable applications they deliver. I highly <br> recommend them for any web development needs.</p>
+          <img class="clip-client" src="img/d5 (1).svg " alt="">
+          <img class="quote" src="img/quote.svg" alt="">
+          <p class="about-them">Business Manager</p>
+          <p class="about-them-name">David Williams</p>
+        </div>
+        <div id="Div4" style="display: none;">
+          <img class="clip-img" src="img/clip (1).jpg" alt="">
+          <p class="clip-p">I've had the opportunity to collaborate with Salome <br> on a few projects, and I'm consistently impressed by their <br> exceptional skill set and dedication to delivering high-quality results.<br> They possess a unique combination of technical expertise and creative vision,<br> which enables them to build innovative and <br>effective web solutions. I highly recommend Salome for any web development project.</p>
+          <img class="clip-client" src="img/d3 (1).svg " alt="">
+          <img class="quote" src="img/quote.svg" alt="">
+          <p class="about-them">CEO</p>
+          <p class="about-them-name">Lisa lopez</p>
+        </div>
+    </div>
+</div>
 <h1 class="for-projects reg">Latest Projects</h1>
 <section class="for-all-container">
     <div class="for-all"> 
@@ -314,8 +342,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit
 </p></div>
 <div class="input-container">
-  <form action="https://borjomi.loremipsum.ge/api/send-message
-  ">
+  <form action="https://borjomi.loremipsum.ge/api/send-message" method="get">
     <input type="text" placeholder="Your Name*" name="user"
     id="name" required>
     <input type="email" name="mail" id="mail" placeholder="Email Addres*"  required>
@@ -375,6 +402,28 @@ function myFunction() {
 
 
 
+var divs = ["Div1", "Div2", "Div3", "Div4"];
+  var visibleDivId = null;
+  function divVisibility(divId) {
+    if(visibleDivId === divId) {
+      visibleDivId = null;
+    } else {
+      visibleDivId = divId;
+    }
+    hideNonVisibleDivs();
+  }
+  function hideNonVisibleDivs() {
+    var i, divId, div;
+    for(i = 0; i < divs.length; i++) {
+      divId = divs[i];
+      div = document.getElementById(divId);
+      if(visibleDivId === divId) {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    }
+  }
 
 </script>
     </body>
