@@ -488,6 +488,8 @@ a {
 
 
 
+
+
 .for-projects{
     font-size: 70px;
     margin-top: 114px;
@@ -566,6 +568,13 @@ a {
     margin-top: -20px;
 }
 .flex-container {
+    width: 800px;
+    margin-left: 198px;
+    margin-top: 118px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-3 {
     width: 800px;
     margin-left: 198px;
     margin-top: 118px;
@@ -716,34 +725,45 @@ footer {
 }
 .footer-p-1{
     position:absolute;
-    top: 7422px;
+    top: 7322px;
     font-size: 45px;
     left: 840px;
     color: white;
 }
 .footerp-2{
     position: absolute;
-    top: 7520px;
+    top: 7420px;
     left: 750px;
     font-size: 17px;
     color: #EEEEEE;
 }
 .input-container{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     position: absolute;
-    top: 7610px;
+    top: 7510px;
     left: 580px;
 }
-.input-container input{
+ .for-mail, .for-web{
     width: 290px;
     height: 50px;
 }
-.input-container textarea{
-    margin-top: 60px;
-    margin-left: -878px;
+.for-name-input{
+    width: 290px;
+    height: 50px; 
 }
-.footer-button{
+.for-name-input::placeholder{
+    font-size: 15px;
+}
+.for-message{
+    margin-top: 15px;
+    width: 885px;
+    height: 110px;
+}
+.submit{
+    top: 7800px;
+}
+.submit{
     width: 187px;
     height: 50px; 
     background: #DAAF1B00 0% 0% no-repeat padding-box;
@@ -751,10 +771,10 @@ footer {
     color: #E93656;
     font-size: 12px;
     position: absolute;
-    top: 7858px;
-    left: 890px;
+    top: 200px;
+    left: 300px;
 }
-.footer-button:hover{
+.submit:hover{
     background-color: #E93656;
     color: #DFDFDF;
 }
@@ -805,3 +825,188 @@ footer {
 .by-me{
     margin-top: -10px;
 }
+
+
+
+@media (max-width: 1024px) {
+    .for-zero{
+        margin-left: 690px;
+    }
+    .name{
+        left: 70px;
+    }
+    .clients{
+        left: 420px;
+        top: 650px;
+    }
+    .about{
+        display: block
+    }
+    .me{
+        display: inline-block;
+    }
+    .what-i-can-do{
+        display: inline-block;
+    }
+    .all-about-me{
+        width: 700px;
+    }
+    .hire{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-left: 490px;
+    }
+    .hr1{
+        width: 256px;
+        background-color: #E93656;
+    }
+    .hr2{
+        width: 195px;
+        background-color: #E93656;
+    }
+    .hr3{
+        width: 204px;
+        background-color: #E93656;
+    }
+    .hr4{
+        width: 120px;
+        background-color: #E93656;
+    }
+    .contact{
+        gap: 10px;
+    }
+    .phone{
+        margin-left: 35px;
+    }
+    .for-clients{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;       
+    }
+    .clip-p{
+        top: 3750px;
+        left: 0px;
+    }
+    .clip-client{
+        top: 3640px;
+        left: 0px;
+        width: 110px;
+    }
+    .quote{
+        top: 3640px;
+        left: 130px;
+    }
+    .about-them{
+        top: 3665px;
+        left: 130px;
+    }
+    .about-them-name{
+        top: 3670px;
+        left: 130px;
+    }
+    .buttons{
+        top: 3690px;
+        left: 730px;
+    }
+    .for-projects{
+        margin-left: 100px;
+    }
+    .for-all-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .dif-div{
+        position: relative;
+    }
+    .flex-container{
+        position: absolute;
+        top: 5600px;
+        z-index: 1;
+    }
+    .flex-container p{
+        color: white;
+    }
+    .div-img-2{
+        position: relative;
+        width: auto;
+    }
+    .flex-container-2{
+        position: absolute;
+        top: 6180px;
+        left: 690px;
+        z-index: 1;
+    }
+    .flex-container-2 p{
+        color: white;
+    }
+    .second-flex-container{
+        position: relative;
+    }
+    .flex-container-3{
+        position: absolute;
+        top: 6750px;
+        left: 20px;
+        z-index: 1;
+    }
+    .flex-container-3 p{
+        color: white;
+    }
+    .flex-about-clients{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-p-1{
+        top: 8120px;
+        left: 400px;
+    }
+    .footerp-2{
+        top: 8200px;
+        left:300px ;
+    }
+    .input-container {
+        top: 8250px;
+        left: 70px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .submit{
+        background-color: #E93656;
+        color: white;
+    }
+    .footers-flex{
+        margin-left: 400px;
+    }
+    /* * {
+        outline: 1px solid red;
+      } */
+      .numbers-div{
+        margin: 0;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
