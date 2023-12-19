@@ -985,6 +985,78 @@ footer {
       .numbers-div{
         margin: 0;
       }
+      
+}
+@media (max-width: 767px) {
+   .carousel {
+    width: 132vw;
+   }
+   .contact{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+   }
+   .main_div{
+    width: 100%;
+   }
+   .clip-p{
+    margin-top: 1009px;
+   }
+   .clip-client{
+    margin-top: 1005px;
+   }
+   .quote{
+    margin-top: 1015px;
+   }
+   .about-them{
+    margin-top: 1025px;
+   }
+   .about-them-name{
+    margin-top: 1035px;
+   }
+   .buttons{
+    margin-top: 1010px;
+   }
+   .flex-container{
+    top: 6500px;
+   }
+   .flex-container-2{
+    top: 7100px;
+   }
+   .flex-container-3{
+    top: 7700px;
+   }
+   .footer-map{
+    height: 500px;
+    width: 1012px;
+   }
+   .footer-p-1{
+    top: 9450px;
+    left: 0;
+   }
+   .footerp-2{
+    top: 9550px;
+    left: 0;
+   }
+   .input-container{
+    top: 9700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 0;
+   }
+  .footers-div{
+    width: 1012px;
+  }
+  .footers-last-div{
+    width: 1012px;
+  }
 }
 
 
